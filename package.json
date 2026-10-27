@@ -1,0 +1,59 @@
+{
+  "name": "sysinfo-astra",
+  "version": "1.0.0",
+  "description": "Full-system snapshot CLI for the terminal — OS, CPU, RAM, disk, GPU, battery, and network.",
+  "bin": {
+    "sysinfo-astra": "bin/cli.js",
+    "sysastra": "bin/cli.js"
+  },
+  "type": "module",
+  "main": "./src/index.js",
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "files": [
+    "bin",
+    "src",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "start": "node bin/cli.js",
+    "sysinfo": "node bin/cli.js",
+    "test": "node --test",
+    "prepublishOnly": "node --test"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "os": [
+    "win32",
+    "darwin",
+    "linux"
+  ],
+  "keywords": [
+    "cli",
+    "sysinfo",
+    "system-info",
+    "neofetch",
+    "fastfetch",
+    "monitor",
+    "cpu",
+    "memory",
+    "disk",
+    "gpu",
+    "battery",
+    "network",
+    "uptime"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/z-astral/sysinfo-astra.git"
+  },
+  "bugs": {
+    "url": "https://github.com/z-astral/sysinfo-astra/issues"
+  },
+  "homepage": "https://github.com/z-astral/sysinfo-astra#readme"
+}
